@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS-04: Even or Odd</title>
+<style>body{font-family:Arial,sans-serif;max-width:700px;margin:40px auto;padding:20px;background:#f8fafc}nav a{margin-right:15px;color:#2563eb;text-decoration:none}h1{color:#1e40af}.desc{background:#e0f2fe;padding:12px;border-radius:8px;margin-bottom:20px;border-left:4px solid #0284c7}input{padding:8px}button{padding:10px 18px;background:#2563eb;color:white;border:none;border-radius:6px;cursor:pointer;margin-left:8px}#result{margin-top:15px;font-size:1.2rem}</style>
+</head>
+<body>
+<nav><a href="../index.html">Home</a><a href="index.html">Back to JS Programs</a></nav>
+<h1>JS-04: Even or Odd</h1>
+<div class="desc">Check whether a number is even or odd.</div>
+<input type="number" id="num" value="7">
+<button onclick="check()">Check</button>
+<div id="result"></div>
+<script>
+function check(){
+  const n=+document.getElementById('num').value;
+  document.getElementById('result').textContent = n%2===0 ? n+' is Even' : n+' is Odd';
+}
+</script>
+</body>
+</html>

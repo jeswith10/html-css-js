@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Programs</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; padding: 30px 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        nav { display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
+        nav a { color: #38bdf8; text-decoration: none; padding: 8px 16px; border: 1px solid #334155; border-radius: 6px; }
+        nav a:hover { background: #1e293b; border-color: #38bdf8; }
+        h1 { font-size: 2rem; margin-bottom: 10px; background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: #94a3b8; margin-bottom: 25px; }
+        h2 { color: #a78bfa; margin: 28px 0 12px; font-size: 1.15rem; border-bottom: 1px solid #334155; padding-bottom: 6px; }
+        ol { list-style: none; counter-reset: item; }
+        ol li { counter-increment: item; margin-bottom: 8px; background: #1e293b; border-radius: 8px; border: 1px solid #334155; transition: all 0.2s; }
+        ol li:hover { border-color: #38bdf8; transform: translateX(4px); }
+        ol li a { display: flex; align-items: center; padding: 12px 16px; color: #e2e8f0; text-decoration: none; gap: 12px; font-size: 0.95rem; }
+        ol li a::before { content: counter(item); background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.75rem; flex-shrink: 0; }
+        ol li a:hover { color: #38bdf8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="../index.html">🏠 Home</a>
+        </nav>
+        <h1>JavaScript Programs</h1>
+        <p class="subtitle">Basics • DOM • Events • Forms • Storage • Mini Projects</p>
+
+        <h2>Basics & Core Programs</h2>
+        <ol>
+            <li><a href="js-01-hello.html">Display “Hello World”</a></li>
+            <li><a href="js-02-arithmetic.html">Arithmetic operations</a></li>
+            <li><a href="js-03-largest.html">Largest of three numbers</a></li>
+            <li><a href="js-04-even-odd.html">Even or Odd</a></li>
+            <li><a href="js-05-positive-negative.html">Positive, Negative or Zero</a></li>
+            <li><a href="js-06-factorial.html">Factorial of a number</a></li>
+            <li><a href="js-07-fibonacci.html">Fibonacci series</a></li>
+            <li><a href="js-08-prime.html">Check Prime number</a></li>
+            <li><a href="js-09-palindrome.html">Check Palindrome number</a></li>
+            <li><a href="js-10-reverse.html">Reverse a number</a></li>
+            <li><a href="js-11-sum-digits.html">Sum of digits</a></li>
+            <li><a href="js-12-array-minmax.html">Largest & Smallest in array</a></li>
+            <li><a href="js-13-sort-array.html">Sort an array</a></li>
+            <li><a href="js-14-sum-average.html">Sum & Average of array</a></li>
+            <li><a href="js-15-functions.html">JavaScript Functions</a></li>
+            <li><a href="js-16-arrow.html">Arrow Functions</a></li>
+            <li><a href="js-17-strings.html">Strings & String methods</a></li>
+            <li><a href="js-18-arrays.html">Arrays & Array methods</a></li>
+            <li><a href="js-19-objects.html">Objects in JavaScript</a></li>
+            <li><a href="js-20-date-math.html">Date and Math objects</a></li>
+        </ol>
+
+        <h2>DOM & Events</h2>
+        <ol start="21">
+            <li><a href="js-21-change-text.html">Change text using JavaScript</a></li>
+            <li><a href="js-22-bg-color.html">Change background color</a></li>
+            <li><a href="js-23-button-click.html">Button click event</a></li>
+            <li><a href="js-24-show-hide.html">Show / Hide element</a></li>
+            <li><a href="js-25-change-image.html">Change image on button click</a></li>
+            <li><a href="js-26-digital-clock.html">Digital Clock</a></li>
+            <li><a href="js-27-calculator.html">Simple Calculator</a></li>
+            <li><a href="js-28-guess-game.html">Number Guessing Game</a></li>
+            <li><a href="js-29-form-validation.html">Form Validation</a></li>
+            <li><a href="js-30-todo.html">To-Do List</a></li>
+            <li><a href="js-31-quiz.html">Simple Quiz Application</a></li>
+            <li><a href="js-32-counter.html">Counter (Increment / Decrement)</a></li>
+            <li><a href="js-33-stopwatch.html">Stopwatch</a></li>
+            <li><a href="js-34-countdown.html">Countdown Timer</a></li>
+        </ol>
+
+        <h2>Advanced & Storage</h2>
+        <ol start="35">
+            <li><a href="js-35-localstorage.html">localStorage demo</a></li>
+            <li><a href="js-36-theme-switcher.html">Dark / Light Theme Switcher</a></li>
+            <li><a href="js-37-password-strength.html">Password Strength Checker</a></li>
+            <li><a href="js-38-bmi.html">BMI Calculator</a></li>
+            <li><a href="js-39-password-generator.html">Random Password Generator</a></li>
+            <li><a href="js-40-tic-tac-toe.html">Tic-Tac-Toe Game</a></li>
+        </ol>
+    </div>
+</body>
+</html>

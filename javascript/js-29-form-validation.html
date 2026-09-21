@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:500px;margin:40px auto;padding:20px;background:#f8fafc}
+nav a{margin-right:15px;color:#2563eb;text-decoration:none}
+h1{color:#1e40af}
+.desc{background:#e0f2fe;padding:12px;border-radius:8px;margin-bottom:20px;border-left:4px solid #0284c7}
+label{display:block;margin:12px 0 4px;font-weight:600}
+input{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:6px;box-sizing:border-box}
+.error{color:#ef4444;font-size:0.85rem;margin-top:3px}
+button{margin-top:20px;padding:12px 28px;background:#2563eb;color:white;border:none;border-radius:6px;cursor:pointer}
+.success{color:#059669;margin-top:15px;font-weight:600}
+</style>
+</head>
+<body>
+<nav><a href="../index.html">Home</a><a href="index.html">JS Programs</a></nav>
+<h1>Form Validation</h1>
+<div class="desc">Validate name, email, phone and password with JavaScript.</div>
+<form id="form" onsubmit="return validate()">
+<label>Name</label>
+<input type="text" id="name">
+<div class="error" id="nameErr"></div>
+<label>Email</label>
+<input type="text" id="email">
+<div class="error" id="emailErr"></div>
+<label>Phone</label>
+<input type="text" id="phone">
+<div class="error" id="phoneErr"></div>
+<label>Password</label>
+<input type="password" id="password">
+<div class="error" id="passErr"></div>
+<button type="submit">Submit</button>
+</form>
+<div id="msg" class="success"></div>
+<script>
+function validate(){
+  let ok=true;
+  document.querySelectorAll('.error').forEach(e=>e.textContent='');
+  document.getElementById('msg').textContent='';
+  const name=document.getElementById('name').value.trim();
+  const email=document.getElementById('email').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const pass=document.getElementById('password').value;
+  if(!name||!/^[A-Za-z ]+$/.test(name)){document.getElementById('nameErr').textContent='Enter valid name (letters only)';ok=false;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){document.getElementById('emailErr').textContent='Enter valid email';ok=false;}
+  if(!/^\d{10}$/.test(phone)){document.getElementById('phoneErr').textContent='Enter 10-digit phone';ok=false;}
+  if(pass.length<6){document.getElementById('passErr').textContent='Password min 6 characters';ok=false;}
+  if(ok) document.getElementById('msg').textContent='Form submitted successfully!';
+  return false; // prevent actual submit for demo
+}
+</script>
+</body>
+</html>
