@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-09: HTML5 Input Types</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background: #f8fafc; color: #1e293b; }
+        nav { margin-bottom: 30px; }
+        nav a { margin-right: 15px; color: #2563eb; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        h1 { color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; }
+        .desc { background: #e0f2fe; padding: 12px 16px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #0284c7; }
+        form { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        label { display: block; margin: 14px 0 5px; font-weight: 600; }
+        input { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        button { margin-top: 20px; padding: 12px 28px; background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to HTML Programs</a>
+    </nav>
+
+    <h1>Program 9: HTML5 Input Types</h1>
+    <div class="desc">Demonstrates email, date, number, password, color, range, tel, url, search, etc.</div>
+
+    <form onsubmit="alert('Demo form submitted'); return false;">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+
+        <label for="dob">Date</label>
+        <input type="date" id="dob">
+
+        <label for="age">Number (Age)</label>
+        <input type="number" id="age" min="1" max="120" value="18">
+
+        <label for="phone">Telephone</label>
+        <input type="tel" id="phone" placeholder="+91 98765 43210">
+
+        <label for="website">URL</label>
+        <input type="url" id="website" placeholder="https://">
+
+        <label for="search">Search</label>
+        <input type="search" id="search" placeholder="Search...">
+
+        <label for="color">Color Picker</label>
+        <input type="color" id="color" value="#3b82f6">
+
+        <label for="range">Range (0-100)</label>
+        <input type="range" id="range" min="0" max="100" value="50">
+
+        <label for="time">Time</label>
+        <input type="time" id="time">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

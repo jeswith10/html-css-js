@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-11: Internal & External CSS</title>
+    <!-- External CSS (simulated by a style block + link concept) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f0f9ff;
+            color: #0f172a;
+        }
+        nav a { margin-right: 15px; color: #0369a1; text-decoration: none; }
+        h1 { color: #0369a1; border-bottom: 3px solid #0ea5e9; padding-bottom: 10px; }
+        .desc { background: #e0f2fe; padding: 12px 16px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #0284c7; }
+        .box {
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        .internal { background: #dbeafe; border: 2px solid #3b82f6; }
+        .inline-demo { color: #b91c1c; font-weight: bold; background: #fee2e2; padding: 4px 8px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to HTML Programs</a>
+    </nav>
+
+    <h1>Program 11: Internal & External CSS</h1>
+    <div class="desc">
+        This page uses <strong>Internal CSS</strong> (inside &lt;style&gt; tag) and demonstrates the concept of External CSS (via Google Fonts link).
+        Inline CSS is also shown below.
+    </div>
+
+    <div class="box internal">
+        <h2>Styled with Internal CSS</h2>
+        <p>This box uses classes defined in the &lt;style&gt; block in the head.</p>
+    </div>
+
+    <p>This text has <span class="inline-demo" style="font-style: italic;">inline CSS</span> applied directly via the style attribute.</p>
+
+    <p style="color: #059669; font-size: 1.1rem;">Another paragraph with pure inline styling (green text).</p>
+
+    <p>External CSS is typically linked like: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></p>
+</body>
+</html>

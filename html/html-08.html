@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-08: Semantic Elements</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f1f5f9; color: #1e293b; }
+        nav.top { background: #1e40af; padding: 12px 20px; }
+        nav.top a { color: white; margin-right: 20px; text-decoration: none; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { background: #1e40af; color: white; padding: 30px; text-align: center; border-radius: 0 0 12px 12px; }
+        nav.page-nav { background: #3b82f6; padding: 12px; margin: 20px 0; border-radius: 8px; }
+        nav.page-nav a { color: white; margin-right: 15px; text-decoration: none; }
+        section { background: white; padding: 20px; margin: 15px 0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+        article { border-left: 4px solid #3b82f6; padding-left: 15px; margin: 15px 0; }
+        footer { background: #1e293b; color: #94a3b8; text-align: center; padding: 20px; margin-top: 30px; border-radius: 12px 12px 0 0; }
+        .desc { background: #e0f2fe; padding: 12px 16px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #0284c7; }
+        h1, h2 { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <nav class="top">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to HTML Programs</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Semantic HTML Demo</h1>
+            <p>Using &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;</p>
+        </header>
+
+        <div class="desc">Semantic elements give meaning to the structure of the page for browsers and screen readers.</div>
+
+        <nav class="page-nav">
+            <a href="#news">News</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>HTML5 is Awesome</h3>
+                <p>Semantic tags improve accessibility and SEO. This is an &lt;article&gt; inside a &lt;section&gt;.</p>
+            </article>
+            <article>
+                <h3>CSS Continues to Evolve</h3>
+                <p>Another independent article block with its own heading and content.</p>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>This page demonstrates proper use of HTML5 semantic elements instead of generic &lt;div&gt; tags.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Practical Programs | All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

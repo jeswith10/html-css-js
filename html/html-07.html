@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-07: iframes</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 20px; background: #f8fafc; color: #1e293b; }
+        nav { margin-bottom: 30px; }
+        nav a { margin-right: 15px; color: #2563eb; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        h1 { color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; }
+        h2 { color: #1e40af; margin-top: 30px; }
+        .desc { background: #e0f2fe; padding: 12px 16px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #0284c7; }
+        iframe { border: 2px solid #94a3b8; border-radius: 8px; width: 100%; height: 350px; margin: 15px 0; }
+        .note { background: #fef3c7; padding: 12px; border-radius: 8px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to HTML Programs</a>
+    </nav>
+
+    <h1>Program 7: Frames / iframes</h1>
+    <div class="desc">Demonstrates embedding another page using the &lt;iframe&gt; element. (Framesets are obsolete; iframes are the modern approach.)</div>
+
+    <h2>Embedded Wikipedia Page</h2>
+    <iframe src="https://en.wikipedia.org/wiki/HTML" title="Wikipedia HTML Article"></iframe>
+
+    <h2>Embedded Map (OpenStreetMap)</h2>
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=77.5,12.9,77.7,13.1&amp;layer=mapnik" title="Map"></iframe>
+
+    <div class="note">
+        <strong>Note:</strong> Some sites block iframe embedding (X-Frame-Options). The examples above usually work.
+    </div>
+</body>
+</html>

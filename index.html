@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JavaScript Practical Programs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 0.8s ease;
+        }
+        .header h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .card:hover::before {
+            opacity: 1;
+        }
+        .card-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: #f1f5f9;
+        }
+        .card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .card a {
+            display: inline-block;
+            padding: 12px 28px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        .card a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2rem; }
+            .cards { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>HTML • CSS • JavaScript</h1>
+        <p>Practical Programs Dashboard</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-icon">📄</div>
+            <h2>HTML Programs</h2>
+            <p>Basic HTML, lists, tables, forms, semantic elements, media & more</p>
+            <a href="html/index.html">View HTML Programs</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🎨</div>
+            <h2>CSS Programs</h2>
+            <p>Selectors, box model, flexbox, grid, animations, responsive design</p>
+            <a href="css/index.html">View CSS Programs</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h2>JavaScript Programs</h2>
+            <p>Basics, DOM, events, forms, storage, mini projects & games</p>
+            <a href="javascript/index.html">View JS Programs</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>HTML CSS &amp; JavaScript Practical Assignment</p>
+        <p>All programs are individual HTML files — open any link to run</p>
+    </div>
+</body>
+</html>

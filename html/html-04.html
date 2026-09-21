@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-04: Images & Hyperlinks</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f8fafc; color: #1e293b; }
+        nav { margin-bottom: 30px; }
+        nav a { margin-right: 15px; color: #2563eb; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        h1 { color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; }
+        h2 { color: #1e40af; margin-top: 30px; }
+        .desc { background: #e0f2fe; padding: 12px 16px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #0284c7; }
+        .img-box { margin: 20px 0; text-align: center; }
+        img { max-width: 100%; border-radius: 8px; border: 2px solid #cbd5e1; }
+        a { color: #2563eb; }
+        .links a { display: block; margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to HTML Programs</a>
+    </nav>
+
+    <h1>Program 4: Images & Hyperlinks</h1>
+    <div class="desc">Demonstrates embedding images and creating hyperlinks (internal & external).</div>
+
+    <h2>Image Example</h2>
+    <div class="img-box">
+        <!-- Using a placeholder image from a public source -->
+        <img src="https://picsum.photos/400/250" alt="Sample landscape image" width="400" height="250">
+        <p><em>Sample image loaded from picsum.photos</em></p>
+    </div>
+
+    <h2>Hyperlinks</h2>
+    <div class="links">
+        <a href="https://www.w3.org/" target="_blank">External Link – W3C Website (opens in new tab)</a>
+        <a href="html-01.html">Internal Link – Go to Program 1</a>
+        <a href="#bottom">Jump to Bottom of this page</a>
+        <a href="mailto:example@college.edu">Email Link</a>
+    </div>
+
+    <br><br><br><br><br>
+    <p id="bottom">You reached the bottom of the page via the jump link!</p>
+</body>
+</html>

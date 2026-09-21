@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-13: Responsive with Media Queries</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; }
+        nav { padding: 15px 20px; background: #1e293b; }
+        nav a { color: #38bdf8; margin-right: 15px; text-decoration: none; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 30px 20px; }
+        h1 { text-align: center; margin-bottom: 10px; color: #38bdf8; }
+        .desc { text-align: center; color: #94a3b8; margin-bottom: 30px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+        .card h3 { color: #38bdf8; margin-bottom: 10px; }
+        /* Tablet */
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+            h1 { font-size: 1.6rem; }
+        }
+        /* Mobile */
+        @media (max-width: 480px) {
+            .grid { grid-template-columns: 1fr; }
+            h1 { font-size: 1.3rem; }
+            .card { padding: 18px; }
+        }
+        .info {
+            margin-top: 30px;
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to HTML Programs</a>
+    </nav>
+
+    <div class="container">
+        <h1>Program 13: Responsive Design with Media Queries</h1>
+        <p class="desc">Resize the browser window to see the layout change (3 → 2 → 1 columns).</p>
+
+        <div class="grid">
+            <div class="card"><h3>Card 1</h3><p>Desktop: 3 columns</p></div>
+            <div class="card"><h3>Card 2</h3><p>Tablet: 2 columns</p></div>
+            <div class="card"><h3>Card 3</h3><p>Mobile: 1 column</p></div>
+            <div class="card"><h3>Card 4</h3><p>Uses CSS Grid + media queries</p></div>
+            <div class="card"><h3>Card 5</h3><p>Fully responsive</p></div>
+            <div class="card"><h3>Card 6</h3><p>Try resizing!</p></div>
+        </div>
+
+        <div class="info">
+            <strong>Breakpoints used:</strong><br>
+            • Desktop (default): 3 columns<br>
+            • max-width 768px: 2 columns<br>
+            • max-width 480px: 1 column
+        </div>
+    </div>
+</body>
+</html>
