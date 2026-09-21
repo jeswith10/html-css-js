@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-07: Gradients</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f8fafc; }
+        nav a { margin-right: 15px; color: #2563eb; text-decoration: none; }
+        h1 { color: #1e40af; }
+        .desc { background: #e0f2fe; padding: 12px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #0284c7; }
+        .grad { height: 120px; border-radius: 12px; margin: 15px 0; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
+        .linear1 { background: linear-gradient(to right, #3b82f6, #8b5cf6); }
+        .linear2 { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+        .radial { background: radial-gradient(circle, #22c55e, #15803d); }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </nav>
+    <h1>CSS-07: Linear & Radial Gradients</h1>
+    <div class="desc">CSS gradient backgrounds.</div>
+    <div class="grad linear1">Linear left → right</div>
+    <div class="grad linear2">Linear 135deg</div>
+    <div class="grad radial">Radial gradient</div>
+</body>
+</html>

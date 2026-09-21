@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-34: Keyframe Animations</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f8fafc; }
+        nav a { margin-right: 15px; color: #2563eb; text-decoration: none; }
+        h1 { color: #1e40af; }
+        .desc { background: #e0f2fe; padding: 12px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #0284c7; }
+        .ball {
+            width: 60px; height: 60px; background: #ef4444; border-radius: 50%;
+            animation: bounce 1.2s ease-in-out infinite;
+            margin: 40px auto;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-80px); }
+        }
+        .fade {
+            width: 120px; height: 60px; background: #3b82f6; color: white;
+            display: flex; align-items: center; justify-content: center; border-radius: 8px;
+            animation: pulse 2s ease-in-out infinite;
+            margin: 20px auto;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </nav>
+    <h1>CSS-34: Keyframe Animations</h1>
+    <div class="desc">CSS @keyframes for bounce and pulse effects.</div>
+    <div class="ball"></div>
+    <div class="fade">Pulsing</div>
+</body>
+</html>

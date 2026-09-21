@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-21: Positioning</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f8fafc; }
+        nav a { margin-right: 15px; color: #2563eb; text-decoration: none; }
+        h1 { color: #1e40af; }
+        .desc { background: #e0f2fe; padding: 12px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #0284c7; }
+        .container { position: relative; height: 300px; background: #e2e8f0; border: 2px dashed #94a3b8; margin: 20px 0; }
+        .box { width: 100px; height: 60px; color: white; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; }
+        .static { background: #64748b; }
+        .relative { background: #3b82f6; position: relative; top: 20px; left: 30px; }
+        .absolute { background: #8b5cf6; position: absolute; top: 50px; right: 40px; }
+        .fixed { background: #ef4444; position: fixed; bottom: 20px; right: 20px; z-index: 100; }
+        .sticky { background: #22c55e; position: sticky; top: 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </nav>
+    <h1>CSS-21: Positioning</h1>
+    <div class="desc">static, relative, absolute, fixed, sticky</div>
+    <div class="box sticky">Sticky (scroll)</div>
+    <div class="container">
+        <div class="box static">Static</div>
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+    </div>
+    <div class="box fixed">Fixed</div>
+    <p style="height: 400px;">Scroll the page to see sticky and fixed positioning in action.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-18: CSS Variables</title>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #8b5cf6;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --radius: 12px;
+        }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: var(--bg); color: var(--text); }
+        nav a { margin-right: 15px; color: var(--primary); text-decoration: none; }
+        h1 { color: var(--primary); }
+        .desc { background: #e0f2fe; padding: 12px; border-radius: var(--radius); margin-bottom: 20px; border-left: 4px solid var(--primary); }
+        .box { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 30px; border-radius: var(--radius); margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </nav>
+    <h1>CSS-18: CSS Variables</h1>
+    <div class="desc">Custom properties defined in :root and reused throughout the page.</div>
+    <div class="box">This box uses --primary and --secondary variables</div>
+    <p>Changing a variable in :root updates all elements that use it.</p>
+</body>
+</html>
