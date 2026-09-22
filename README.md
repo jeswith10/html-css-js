@@ -2,9 +2,9 @@
 
 ## Student Information
 
-- **Student Name:** ________________________
-- **Register Number:** ________________________
-- **Class / Section:** ________________________
+- **Student Name: P.jeswith venkata sai
+- **Register Number: 250200157
+- **Class / Section:**  6
 - **Subject:** Web Technology / HTML CSS JavaScript
 - **Assignment:** Practical Programs Website
 
